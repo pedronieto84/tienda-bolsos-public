@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "tienda-bolsos"
+  },
+  "targets": {
+    "tienda-bolsos": {
+      "hosting": {
+        "tienda-bolsos": [
+          "tienda-bolsos"
+        ]
+      }
+    }
+  }
+}

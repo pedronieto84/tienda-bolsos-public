@@ -1,0 +1,21 @@
+<mat-grid-list cols="4" rowHeight="1:1.5">
+  <mat-grid-tile *ngFor="let i of productos">
+    <mat-card class="example-card" (click)="navegar(i.url)">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ i.nombre }}</mat-card-title>
+        <mat-card-subtitle>{{ i.precio }}€</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="/assets/img/{{ i.img[0] }}" alt="producto" />
+      <mat-card-content>
+        <p>
+          {{ i.descripcion }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

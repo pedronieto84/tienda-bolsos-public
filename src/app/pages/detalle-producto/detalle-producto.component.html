@@ -1,0 +1,21 @@
+<button
+  mat-icon-button
+  color="primary"
+  aria-label="Example icon button with a home icon"
+  (click)="volver()"
+>
+  <mat-icon>home</mat-icon>
+</button>
+<button
+  mat-icon-button
+  color="primary"
+  aria-label="Example icon button with a home icon"
+  (click)="pasarela()"
+>
+  Pagar
+</button>
+
+<h2>{{ producto?.nombre }}</h2>
+<p>{{ producto?.descripcion }}</p>
+<!-- muestra el array de las imagenes -->
+<img *ngFor="let i of producto.img" src="/assets/img/{{ i }}" alt="" />
